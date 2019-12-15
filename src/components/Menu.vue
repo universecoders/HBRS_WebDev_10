@@ -78,6 +78,10 @@ export default {
   color: #818181;
   display: block;
 }
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
 .topnav {
   overflow: hidden;

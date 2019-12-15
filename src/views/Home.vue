@@ -1,38 +1,30 @@
 <template>
   <div id="html">
-    <Menu
-      v-bind:direction="top"
-      v-bind:items="topMenu"
-      v-on:changeRoute="changeMainRoute"
-    />
-    <Menu
-      v-bind:direction="side"
-      v-bind:items="sideMenu"
-      v-on:load-content="loadSideContent"
-    />
+    <Menu v-bind:direction="top" v-bind:items="topMenu" v-on:changeRoute="changeMainRoute" />
+    <Menu v-bind:direction="side" v-bind:items="sideMenu" v-on:load-content="loadSideContent" />
     <Content v-bind:content="content" />
     <RightBar />
   </div>
 </template>
 
 <script>
-import Menu from '../components/Menu';
-import RightBar from '../components/RightBar';
-import Content from '../components/Content';
+import Menu from "../components/Menu";
+import RightBar from "../components/RightBar";
+import Content from "../components/Content";
 export default {
-  name: 'Html',
+  name: "Html",
   components: { Menu, RightBar, Content },
   props: {
     direction: String,
-    top: { type: String, default: 'top' },
-    side: { type: String, default: 'side' },
+    top: { type: String, default: "top" },
+    side: { type: String, default: "side" },
     combinedData: Object
   },
   data() {
     return {
       topMenu: this.combinedData.combined,
       sideMenu: this.combinedData.combined[0],
-      content: ''
+      content: "👋Welcome👋 - just simple pick any link to get more information"
     };
   },
   methods: {

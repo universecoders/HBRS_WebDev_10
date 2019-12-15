@@ -1,5 +1,14 @@
 <template>
-  <div class="rightnav">This is the right Bar</div>
+  <div class="rightnav">
+    <p>This is the right Bar</p>
+    <p>
+      All content is copy pasted from MDN:
+      <a href="https://developer.mozilla.org">
+        &#62;&#62;
+        KLICK &#60;&#60;
+      </a>
+    </p>
+  </div>
 </template>
 
 <script>

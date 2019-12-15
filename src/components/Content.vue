@@ -6,13 +6,16 @@
 
 <script>
 export default {
-  name: 'Content',
-  props: ['content']
+  name: "Content",
+  props: ["content"]
 };
 </script>
 
 <style scoped>
 .main {
-  margin-left: 200px; /* Same as the width of the sidenav */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 200px 0 200px;
 }
 </style>
