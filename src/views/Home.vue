@@ -33,6 +33,10 @@ export default {
         item => item.main.declaration === route
       );
       this.sideMenu = this.sideMenu[0];
+      this.content = this.combinedData.combined.filter(
+        item => item.main.declaration === route
+      );
+      this.content = this.content[0].main.content;
     },
     loadSideContent(declaration, mainDeclaration, id) {
       this.content = this.combinedData.combined.filter(
