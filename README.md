@@ -7,6 +7,7 @@ Here is an overview of what you can expect to be added soon:
 
 - VUEX for state management
 - node.js with express for backend purposes
+- mongoDB for database persistency
 - probably: deployment on custom VPS
 
 ## Project setup
